@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'; // 여기에 BrowserRouter 추가됨
 import AdminSettings from './AdminSettings';
 import ForgotPassword from './ForgotPassword';
 
@@ -19,11 +19,13 @@ function Home() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/admin/settings" element={<AdminSettings />} />
-      <Route path="/forgot-password" element={<ForgotPassword />} />
-    </Routes>
+    <BrowserRouter> {/* 이 친구가 있어야 화면이 나옵니다! */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/admin/settings" element={<AdminSettings />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
