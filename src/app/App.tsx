@@ -125,7 +125,7 @@ function AppContent() {
         console.log('✨ 로고 크기: 36px (헤더 + Footer)');
 
         if (isMobile) {
-          alert(`✅ 예화월드 v${APP_VERSION}\n\n로고 크기: 36px로 업데이트됨\n비밀번호 변경 기능 추가\n\n정상 작동 중입니다! 🎉`);
+          console.log('✅ 모바일 최적화 로드 완료');
         }
 
         sessionStorage.setItem(alertKey, 'true');
