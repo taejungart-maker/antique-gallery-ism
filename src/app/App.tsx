@@ -19,7 +19,7 @@ import imageCompression from 'browser-image-compression';
 import { projectId, publicAnonKey } from '@/utils/supabase/info';
 import { Archive, Settings } from 'lucide-react';
 
-// VERSION: 2.0.7 - LOGO 36PX UPDATE + ULTRA CACHE BUSTER
+// VERSION: 2.0.8 - FOOTER ADDRESS REMOVAL + CACHE KILLER
 const logo = "/logo_yehwa.jpg"; // Use public logo or placeholder
 
 function AppContent() {
@@ -38,9 +38,9 @@ function AppContent() {
   const [isAddArchiveModalOpen, setIsAddArchiveModalOpen] = useState(false);
   const [isPasswordChangeModalOpen, setIsPasswordChangeModalOpen] = useState(false);
 
-  // 🔥🔥🔥 ULTRA MOBILE CACHE KILLER v2.0.7 🔥🔥🔥
+  // 🔥🔥🔥 ULTRA MOBILE CACHE KILLER v2.0.8 🔥🔥🔥
   useEffect(() => {
-    const APP_VERSION = '2.0.7';
+    const APP_VERSION = '2.0.8';
     const BUILD_ID = Date.now(); // 매번 다른 ID
 
     console.log(`%c🚀 예화월드 VERSION ${APP_VERSION}`, 'color: #06b6d4; font-size: 20px; font-weight: bold;');
