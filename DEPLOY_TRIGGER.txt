@@ -1,0 +1,3 @@
+VERSION 2.0.3 - Mobile Responsive Header Update
+Deploy Timestamp: 2025-01-27
+Force redeploy to apply mobile header design changes
