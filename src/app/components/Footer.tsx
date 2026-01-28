@@ -8,7 +8,7 @@ export function Footer() {
   const translations = {
     ko: {
       gallery: '예화월드',
-      address: '서울특별시 서초구 반포대로 58, 201호 (서초동, 경남빌딩)',
+      address: '',
       contact: '연락처',
       phone: '전화',
       phoneNumber: '010-8292-6663',
@@ -24,7 +24,7 @@ export function Footer() {
     },
     zh: {
       gallery: '艺华世界',
-      address: '首尔特别市瑞草区盘浦大路58号201室（瑞草洞，京南大厦）',
+      address: '',
       contact: '联系方式',
       phone: '电话',
       phoneNumber: '010-8292-6663',
@@ -40,7 +40,7 @@ export function Footer() {
     },
     en: {
       gallery: 'Yehwa World',
-      address: '201, 58 Banpo-daero, Seocho-gu, Seoul, South Korea (Seocho-dong, Kyungnam Building)',
+      address: '',
       contact: 'Contact',
       phone: 'Phone',
       phoneNumber: '010-8292-6663',
@@ -83,9 +83,7 @@ export function Footer() {
                 {t.gallery}
               </h3>
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: '#6b7280', fontFamily: 'Pretendard, sans-serif', maxWidth: '280px' }}>
-              {t.address}
-            </p>
+            {/* 주소 정보 삭제 */}
           </div>
 
           {/* Column 2: Contact */}
